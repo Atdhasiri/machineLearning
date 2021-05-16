@@ -68,7 +68,7 @@ print(len(y))
 
 """**Recieve all data from Test**"""
 
-data = [['Files', 'Classes']]
+#data = [['Files', 'Classes']]
 classes = ['Glaucoma', 'Normal', 'Other']
 #num_folders = ['1','2','3','4','5']
 #temp_x = []
