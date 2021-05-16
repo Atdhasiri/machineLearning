@@ -27,7 +27,7 @@ def save_to_numpy(imgs,label,path,filename):
 
 """**Recieve data from Train Folder with All fold and ALL classes**"""
 
-data = [['Files', 'Classes']]
+#data = [['Files', 'Classes']]
 classes = ['Glaucoma', 'Normal', 'Other']
 num_folders = ['1','2','3','4','5']
 temp_x = []
@@ -68,7 +68,7 @@ print(len(y))
 
 """**Recieve all data from Test**"""
 
-data = [['Files', 'Classes']]
+#data = [['Files', 'Classes']]
 classes = ['Glaucoma', 'Normal', 'Other']
 #num_folders = ['1','2','3','4','5']
 #temp_x = []
