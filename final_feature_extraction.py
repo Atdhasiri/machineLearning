@@ -137,7 +137,7 @@ def segment_cd(image,plotHis,plotPic):
 
 def cdr(cup,disc,plot):
   
-    #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(10,10))
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(10,10))
     #morphological closing and opening operations
     R1 = cv2.morphologyEx(cup, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(2,2)), iterations = 1)
     r1 = cv2.morphologyEx(R1, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(7,7)), iterations = 1)
