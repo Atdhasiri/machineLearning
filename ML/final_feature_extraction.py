@@ -380,3 +380,19 @@ def fast_glcm_entropy(img, vmin=0, vmax=255, nbit=8, ks=5):
     pnorm = glcm / np.sum(glcm, axis=(0,1)) + 1./ks**2
     ent  = np.sum(-pnorm * np.log(pnorm), axis=(0,1))
     return ent
+
+def fos(image):
+  ans = []
+  mean = np.mean(image)
+  ans.append(mean)
+  std = np.std(image)
+  ans.append(std)
+  var = np.var(image)
+  ans.append(var)
+  kurt = kurtosis(image, axis=None, fisher=True, bias=True)
+  ans.append(kurt)
+  sk = skew(image,axis=None)
+  ans.append(sk)
+  ent = entropy(image,axis=None)
+  ans.append(ent)
+  return ans
